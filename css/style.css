@@ -1,0 +1,108 @@
+/* Color pattern */
+/* .dark-primary-color    { background: #0097A7; }
+.default-primary-color { background: #00BCD4; }
+.light-primary-color   { background: #B2EBF2; }
+.text-primary-color    { color: #FFFFFF; }
+.accent-color          { background: #03A9F4; }
+.primary-text-color    { color: #212121; }
+.secondary-text-color  { color: #757575; }
+.divider-color         { border-color: #BDBDBD; } */
+:root {
+    --dark-primary-color: #0097A7;
+    --default-primary-color: #00BCD4;
+    --light-primary-color:#B2EBF2;
+    --text-primary-color: #FFFFFF;
+    --accent-color: #03A9F4;
+    --primary-text-color: #212121;
+    --secondary-text-color: #757575;
+    --divider-color: border-color: #BDBDBD;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+
+/* Set height of the grid so .sidenav can be 100% (adjust as needed) */
+.row.content {
+  height: 450px;
+}
+
+/* Set gray background color and 100% height */
+.sidenav {
+  padding-top: 20px;
+  background-color: #f1f1f1;
+  height: 100%;
+}
+
+/* Set black background color, white text and some padding */
+footer {
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+
+    background-color: #555;
+    color: white;
+    padding: 15px;
+}
+
+/* On small screens, set height to 'auto' for sidenav and grid */
+@media screen and (max-width: 767px) {
+  .sidenav {
+    height: auto;
+    padding: 15px;
+  }
+  .row.content {
+    height: auto;
+  }
+}
+
+.bcontent {
+  margin-top: 10px;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    height: 130px;
+    /* width: 1920; */
+    /* height: 133; */
+}
+
+.nav-bar-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--light-primary-color);
+}
+
+/* Remove the navbar's default margin-bottom and rounded borders */
+.navbar {
+    margin-bottom: 0;
+    border-radius: 0;
+}
+
+.menu {
+    background-color: #0097A7;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 50px;
+    padding: 15px;
+}
+
+.menu-begin {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: space-between;
+}
+
+.menu-link-content {
+    font-family: 'Inter', 'Courier New', Courier, monospace;
+    font-weight: 700;
+}
+
+body{
+    background-color: #F5F5F5;
+}
